@@ -1,8 +1,10 @@
 import EventWrapper from './EventWrapper'
 import BackgroundWrapper from './BackgroundWrapper'
+import EventWrapperChild from './EventWrapperChild'
 
 export const components = {
   eventWrapper: EventWrapper,
+  eventWrapperChild: EventWrapperChild,
   timeSlotWrapper: BackgroundWrapper,
   dateCellWrapper: BackgroundWrapper,
 }

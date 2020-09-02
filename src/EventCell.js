@@ -19,7 +19,11 @@ class EventCell extends React.Component {
       accessors,
       getters,
       children,
-      components: { event: Event, eventWrapper: EventWrapper },
+      components: {
+        event: Event,
+        eventWrapper: EventWrapper,
+        eventWrapperChild: EventWrapperChild,
+      },
       slotStart,
       slotEnd,
       ...props
@@ -70,7 +74,9 @@ class EventCell extends React.Component {
           onClick={e => onSelect && onSelect(event, e)}
           onDoubleClick={e => onDoubleClick && onDoubleClick(event, e)}
         >
-          {typeof children === 'function' ? children(content) : content}
+          <EventWrapperChild>
+            {typeof children === 'function' ? children(content) : content}
+          </EventWrapperChild>
         </div>
       </EventWrapper>
     )

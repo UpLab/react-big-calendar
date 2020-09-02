@@ -1,0 +1,6 @@
+diff a/src/TimeGridEvent.js b/src/TimeGridEvent.js	(rejected hunks)
+@@ -61,3 +61 @@ function TimeGridEvent(props) {
+-        <div className="rbc-event-wrapper-child">
+-          {inner}
+-        </div>
++        <div className="rbc-event-wrapper-child">{inner}</div>
