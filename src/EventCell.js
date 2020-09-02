@@ -74,7 +74,7 @@ class EventCell extends React.Component {
           onClick={e => onSelect && onSelect(event, e)}
           onDoubleClick={e => onDoubleClick && onDoubleClick(event, e)}
         >
-          <EventWrapperChild>
+          <EventWrapperChild {...this.props}>
             {typeof children === 'function' ? children(content) : content}
           </EventWrapperChild>
         </div>

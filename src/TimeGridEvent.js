@@ -62,7 +62,7 @@ function TimeGridEvent(props) {
           'rbc-event-continues-later': continuesLater,
         })}
       >
-        <EventWrapperChild>{inner}</EventWrapperChild>
+        <EventWrapperChild {...props}>{inner}</EventWrapperChild>
       </div>
     </EventWrapper>
   )
