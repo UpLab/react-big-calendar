@@ -144,7 +144,7 @@ class EventWrapper extends React.Component {
         // eslint-disable-next-line react/prop-types
         const DNDWrapper = this.props.components.DNDWrapper
         newProps.children = (
-          <DNDWrapper>
+          <DNDWrapper {...this.props}>
             <div className="rbc-addons-dnd-resizable">
               {StartAnchor}
               {children.props.children}
