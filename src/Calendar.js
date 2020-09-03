@@ -672,6 +672,7 @@ class Calendar extends React.Component {
       event: PropTypes.elementType,
       eventWrapper: PropTypes.elementType,
       eventWrapperChild: PropTypes.elementType,
+      DNDWrapper: PropTypes.elementType,
       eventContainerWrapper: PropTypes.elementType,
       dateCellWrapper: PropTypes.elementType,
       timeSlotWrapper: PropTypes.elementType,
@@ -791,6 +792,7 @@ class Calendar extends React.Component {
       components: defaults(components[view] || {}, omit(components, names), {
         eventWrapper: NoopWrapper,
         eventWrapperChild: NoopWrapper,
+        DNDWrapper: NoopWrapper,
         eventContainerWrapper: NoopWrapper,
         dateCellWrapper: NoopWrapper,
         weekWrapper: NoopWrapper,

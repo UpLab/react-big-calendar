@@ -141,13 +141,16 @@ class EventWrapper extends React.Component {
           StartAnchor = !continuesPrior && this.renderAnchor('Up')
           EndAnchor = !continuesAfter && this.renderAnchor('Down')
         }
-
+        // eslint-disable-next-line react/prop-types
+        const DNDWrapper = this.props.components.DNDWrapper
         newProps.children = (
-          <div className="rbc-addons-dnd-resizable">
-            {StartAnchor}
-            {children.props.children}
-            {EndAnchor}
-          </div>
+          <DNDWrapper>
+            <div className="rbc-addons-dnd-resizable">
+              {StartAnchor}
+              {children.props.children}
+              {EndAnchor}
+            </div>
+          </DNDWrapper>
         )
       }
 

@@ -1,10 +1,12 @@
 import EventWrapper from './EventWrapper'
 import BackgroundWrapper from './BackgroundWrapper'
 import EventWrapperChild from './EventWrapperChild'
+import DNDWrapper from './DNDWrapper'
 
 export const components = {
   eventWrapper: EventWrapper,
   eventWrapperChild: EventWrapperChild,
+  DNDWrapper: DNDWrapper,
   timeSlotWrapper: BackgroundWrapper,
   dateCellWrapper: BackgroundWrapper,
 }
